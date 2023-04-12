@@ -18,7 +18,7 @@ cd .ssh
 ```
 - Create new SSH key.
 ```commandline
-ssh-keygen -t rsa -b 4096 -C <email address>
+ssh-keygen -t rsa -b 4096 -C "email address"
 ```
 - Enter the name you would like to save your key.
 ```commandline
@@ -55,19 +55,19 @@ cat <ssh-key-name.pub>
 ```
 - On your GitHub homepage, got to your settings.
 
-![settings.png](settings.png)
+![settings.png](images/settings.png)
 
 - On the left hand side of your page, click on SSH and GPG keys.
 
-![Click SSH.png](Click%20SSH.png)
+![Click SSH.png](images%2FClick%20SSH.png)
 
 - Click on the green tab titled "New SSH Key".
 
-![Click new ssh key.png](Click%20new%20ssh%20key.png)
+![Click new ssh key.png](images%2FClick%20new%20ssh%20key.png)
 
 - Title your new ssh key. Copy and paste the long password you generated in your terminal and click the green tab "Add SSH key" when finished.
 
-![title key and enter ssh key.png](title%20key%20and%20enter%20ssh%20key.png)
+![title key and enter ssh key.png](images%2Ftitle%20key%20and%20enter%20ssh%20key.png)
 
 - Return back to your terminal, where you will then run background program that handles passwords for ssh private keys.
 ```commandline
@@ -79,15 +79,15 @@ ssh-add <private-ssh-key>
 ```
 - Check to see if your private key is authenticated.
 ```commandline
-sss -T git@github.com
+ssh -T git@github.com
 ```
 - Create new repo on GitHub by clicking on the + sign on the top left of the page. Click new repository.
 
-![create new repo.png](create%20new%20repo.png)
+![create new repo.png](images%2Fcreate%20new%20repo.png)
 
 - Name your new repository you just created. You can make it public or private. Click green button "Create repository" when done.
 
-![naming new repo.png](naming%20new%20repo.png)
+![naming new repo.png](images%2Fnaming%20new%20repo.png)
 
 - If you have a folder where you store your repositories, direct yourself to that folder in the terminal.
 
